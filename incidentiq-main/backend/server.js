@@ -53,6 +53,10 @@ function canMakeRequest() {
   return true;
 }
 
+app.get('/health', (req, res) => {
+  res.json({ status: 'ok', timestamp: new Date().toISOString() });
+});
+
 app.get('/api/incidents', (req, res) => {
   db.all("SELECT * FROM incidents ORDER BY createdAt DESC", [], (err, rows) => {
     if (err) return res.status(500).json({ error: err.message });
@@ -201,7 +205,7 @@ app.post('/api/resolve', (req, res) => {
   });
 });
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
-  console.log(`Backend running on http://localhost:${PORT}`);
+  console.log(`Backend running on port ${PORT}`);
 });

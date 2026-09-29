@@ -25,7 +25,7 @@ function App() {
   const [solution, setSolution] = useState('Increased maxLifetime to 1800000 and added finally blocks to close connections. Restarted pods.');
   const [outcome, setOutcome] = useState('Incident resolved. Zero payment drops in last 12 hours.');
 
-  const API_URL = 'http://localhost:3001/api';
+  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001/api';
 
   useEffect(() => {
     fetchIncidents();
