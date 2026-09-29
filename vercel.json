@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "services": {
+    "backend": {
+      "root": "incidentiq-main/backend",
+      "framework": "express"
+    },
+    "frontend": {
+      "root": "incidentiq-main/frontend",
+      "framework": "vite"
+    }
+  }
+}
