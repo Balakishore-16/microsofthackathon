@@ -266,6 +266,11 @@ The most important part is not that the agent can answer an incident question.
 It is that the next time the question looks familiar, the agent has something to remember.
 
 That is the difference between an AI assistant that answers and an agent that can accumulate experience.
+**Screenshots**
+<img width="1865" height="917" alt="Screenshot 2026-09-29 224711" src="https://github.com/user-attachments/assets/daf23fbc-3e44-491e-9c71-60a93c8503e1" />
+
+<img width="1851" height="942" alt="Screenshot 2026-09-29 224746" src="https://github.com/user-attachments/assets/6a614c5b-9364-4e25-abba-2a8fd5653599" />
+
 
 ## References
 
